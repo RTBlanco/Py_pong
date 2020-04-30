@@ -9,29 +9,29 @@ from pygame.locals import *
 # Initialize pygame library
 pygame.mixer.init(frequency=22050, size=-16, channels=1, buffer=64)
 pygame.init()
-
 blip = pygame.mixer.Sound("sounds/blip.ogg")
 
 
 clock = pygame.time.Clock()
-font = pygame.font.Font('fonts/bit5x3.ttf', 100)
 
-# Screen window
-screen_width = 800#1600#1200
-screen_height = 400#800
+# Sets Visual and text
+screen_width = 800
+screen_height = 400
 screen = pygame.display.set_mode((screen_width, screen_height))
+pygame.display.set_caption('Pong')
+pygame.display.set_icon(pygame.image.load('visuals/gaming.png'))
+font = pygame.font.Font('visuals/bit5x3.ttf', 100)
+
 
 
 class Player(pygame.sprite.Sprite):
     def __init__(self, player):
         super(Player, self).__init__()
-        self.surf = pygame.Surface((7.5, 85))    #player deminsions
-        self.surf.fill((255, 255, 255))         #player color
+        self.surf = pygame.Surface((7.5, 85))       #player deminsions
+        self.surf.fill((255, 255, 255))             #player color
         self.score = 0
-        # Detemines if player 1 or player 2
-        # and respected positions  
         self.player = player
-        if self.player == 1:
+        if self.player == 1:    # Detemines if player 1 or player 2  
             self.rect = self.surf.get_rect(center=(10,((screen_height - self.surf.get_height()) /2)))
         elif self.player == 2:
             self.rect = self.surf.get_rect(center=((screen_width - 10) ,((screen_height - self.surf.get_height()) /2)))
@@ -81,10 +81,7 @@ class Ball(pygame.sprite.Sprite):
             self.rect.center = (screen_width / 2 , screen_height / 2)
             self.speed_y *= random.choice((1,-1))
             self.speed_x *= random.choice((1,-1))
-            player_1.score += 1
-            
-            
-            
+            player_1.score += 1      
         elif self.rect.right >= screen_width:
             self.rect.center = (screen_width / 2 , screen_height / 2)
             self.speed_y *= random.choice((1,-1))
