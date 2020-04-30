@@ -2,14 +2,15 @@
 # Pong game in python 
 # First game in python without following tutorial 
  
-import pygame, random, time
+import pygame, random
+from os.path import join
 from pygame.locals import *
 
 
 # Initialize pygame library
 pygame.mixer.init(frequency=22050, size=-16, channels=1, buffer=64)
 pygame.init()
-blip = pygame.mixer.Sound("sounds/blip.ogg")
+blip = pygame.mixer.Sound(join("sounds","blip.wav"))
 
 
 clock = pygame.time.Clock()
@@ -19,8 +20,8 @@ screen_width = 800
 screen_height = 400
 screen = pygame.display.set_mode((screen_width, screen_height))
 pygame.display.set_caption('Pong')
-pygame.display.set_icon(pygame.image.load('visuals/gaming.png'))
-font = pygame.font.Font('visuals/bit5x3.ttf', 100)
+pygame.display.set_icon(pygame.image.load(join('visuals','gaming.png')))
+font = pygame.font.Font(join('visuals','bit5x3.ttf'), 100)
 
 
 
