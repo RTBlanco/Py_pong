@@ -74,6 +74,7 @@ class Ball(pygame.sprite.Sprite):
 
         # keeps the ball on screen and bounces the ball around 
         if self.rect.top <= 0 or self.rect.bottom >= screen_height:
+            blip.play()
             self.speed_y *= -1
         
         # Resets the ball and gives score  
