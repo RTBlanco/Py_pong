@@ -12,7 +12,7 @@ pygame.mixer.init(frequency=22050, size=-16, channels=1, buffer=64)
 pygame.init()
 try:
     blip = pygame.mixer.Sound(join("assests","sounds","blip.wav"))
-except
+except:
     blip = pygame.mixer.Sound(join("assests","sounds","blip.ogg"))
     
     
@@ -25,8 +25,8 @@ screen_width = 800
 screen_height = 400
 screen = pygame.display.set_mode((screen_width, screen_height))
 pygame.display.set_caption('Pong')
-pygame.display.set_icon(pygame.image.load(join('visuals','gaming.png')))
-font = pygame.font.Font(join('visuals','bit5x3.ttf'), 100)
+pygame.display.set_icon(pygame.image.load(join('assests','visuals','gaming.png')))
+font = pygame.font.Font(join('assests','visuals','bit5x3.ttf'), 100)
 
 
 
