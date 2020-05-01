@@ -10,7 +10,12 @@ from pygame.locals import *
 # Initialize pygame library
 pygame.mixer.init(frequency=22050, size=-16, channels=1, buffer=64)
 pygame.init()
-blip = pygame.mixer.Sound(join("sounds","blip.wav"))
+try:
+    blip = pygame.mixer.Sound(join("assests","sounds","blip.wav"))
+except
+    blip = pygame.mixer.Sound(join("assests","sounds","blip.ogg"))
+    
+    
 
 
 clock = pygame.time.Clock()
