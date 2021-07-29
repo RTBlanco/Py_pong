@@ -1,6 +1,7 @@
 #! usr/bin/python3
 # Pong game in python 
 # First game in python without following tutorial 
+# TODO: Seperate objects to distinct files 
  
 import pygame, random
 from os.path import join
@@ -39,6 +40,7 @@ class Player(pygame.sprite.Sprite):
         self.surf.fill((255, 255, 255))             #player color
         self.score = 0
         self.player = player
+
         if self.player == 1:    # Detemines if player 1 or player 2  
             self.rect = self.surf.get_rect(center=(10,((screen_height - self.surf.get_height()) /2)))
         elif self.player == 2:
