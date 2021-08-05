@@ -5,7 +5,6 @@ This is a simple pong game made with the python pygame module
 
 
 ## Controls
-____
 ### player1 
   - "W" - up
 
