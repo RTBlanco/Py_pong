@@ -6,11 +6,11 @@ This is a simple pong game made with the python pygame module
 ## installation
 Py_pong requires that you have python 3.7 and use pipenv 
 
-1. Navigate to the Py_pong directoy and activate pipenv virtual envirment and install the needed dependeey which is just py_game
+1. Navigate to the Py_pong directoy and activate pipenv virtual envirment and install the needed dependencies which is just py_game
     
-    $ pipenv shell 
+   ` $ pipenv shell `
       
-    $ pipenv install 
+   ` $ pipenv install `
 
 2. After everything is install correcly simply run pony.py 
 
