@@ -14,7 +14,7 @@ Py_pong requires that you have python 3.7 and use pipenv
 
 2. After everything is install correcly simply run pony.py 
 
-    $ python pong.py
+    `$ python pong.py `
 
 ## Controls
 ### player1 
