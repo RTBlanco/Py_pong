@@ -9,9 +9,9 @@ pygame.init()
 
 # Issue that mac and window handle the sound differently 
 try:
-    blip = pygame.mixer.Sound(join("assests","sounds","blip.wav"))
+  blip = pygame.mixer.Sound(join("assests","sounds","blip.wav"))
 except:
-    blip = pygame.mixer.Sound(join("assests","sounds","blip.ogg"))
+  blip = pygame.mixer.Sound(join("assests","sounds","blip.ogg"))
     
     
 
