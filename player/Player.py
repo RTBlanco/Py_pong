@@ -1,5 +1,6 @@
 import pygame
 from game_manager import screen_settings
+from pygame.locals import *
 
 class Player(pygame.sprite.Sprite):
   def __init__(self, player):
