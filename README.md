@@ -4,7 +4,7 @@ This is a simple pong game made with the python pygame module
 <img src="https://media.giphy.com/media/fx77jxbYXyWKZickO7/giphy.gif">
 
 ## installation
-Py_pong requires that you have python 3.7 and use pipenv 
+Py_pong requires that you use pipenv 
 
 1. Navigate to the Py_pong directoy and activate pipenv virtual envirment and install the needed dependencies which is just py_game
     
