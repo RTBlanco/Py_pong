@@ -10,3 +10,5 @@ pygame = "*"
 
 [requires]
 
+[scripts]
+game = 'python play.py'
